@@ -66,7 +66,7 @@ class Downloader(object):
         # Getting last modified timestamp
         src_last_modified = time.strptime(
             src_file.headers['last-modified'],
-            '%a, %d %b %Y %H:%M:%S %Z'  # taking time with second
+            b'%a, %d %b %Y %H:%M:%S %Z'  # taking time with second
         )
 
         if os.path.exists(destination) and not force:
